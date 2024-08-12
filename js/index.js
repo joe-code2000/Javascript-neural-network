@@ -1,11 +1,11 @@
-import "./js/network/functions.js";
-import { ACTIVATION_PASS, ACTIVATION_SIGMOID, LOSS_SE, TYPE_BASIC, TYPE_SOFTMAX } from "./js/network/functions.js";
-import "./js/network/layer.js";
-import "./js/network/network.js";
-import { Dataset, Dense, Network, training_label } from "./js/network/network.js";
-import "./js/network/neuron.js";
-import { decimal_to_binary, generate_binary_decimal_trainset, gen_diagonal_matrix } from "./js/utils/utils.js";
-import { dom_canvas, svg } from "./js/visuals/visual_utils.js";
+import "./network/functions.js";
+import { ACTIVATION_PASS, ACTIVATION_SIGMOID, LOSS_SE, TYPE_BASIC, TYPE_SOFTMAX } from "./network/functions.js";
+import "./network/layer.js";
+import "./network/network.js";
+import { Dataset, Dense, Network, training_label } from "./network/network.js";
+import "./network/neuron.js";
+import { decimal_to_binary, generate_binary_decimal_trainset, gen_diagonal_matrix } from "./utils/utils.js";
+import { dom_canvas, svg } from "./visuals/visual_utils.js";
 
 let halt = false
 

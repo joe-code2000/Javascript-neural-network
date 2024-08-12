@@ -136,7 +136,7 @@ export class Network {
                 }
             }
             let accuracy = num_true / num_epochs
-            console.log(`Accuracy: ${(accuracy)}`)
+            // console.log(`Accuracy: ${(accuracy)}`)
             training_label.innerText = `Accuracy: ${(accuracy * 100).toFixed(0)}%`
 
             this.is_training = false

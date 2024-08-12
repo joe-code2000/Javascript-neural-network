@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Binary To Decimal Feed Forward Neural Network</title>
+</head>
+
+<body>
+    <section id="controls">
+        <section>
+            <div>
+                <h3>Load a Model</h3>
+                <input id="load" type="file">
+
+            </div>
+            <div>
+                <h3>Reset the network</h3>
+                <h4>Input size</h4>
+                <input id="input_size" type="number" placeholder="input size > 0" min="0" value="2">
+                <button id="reset_btn">Reset</button>
+                <h4 id="training_label"
+                    style=" width: 40%; padding: 0.5rem; background-color: #ccc; border-radius: 8px; color: #212142;">
+                    Accuracy: 0%</h4>
+            </div>
+            <div>
+                <h3>Train the network</h3>
+                <h4>Number of epochs</h4>
+                <input id="epochs" type="number" placeholder="number of epochs x > 0" min="0" value="1000">
+                <h4>Learning rate</h4>
+                <input id="alpha" type="number" placeholder="learning rate x > 0" min="0" value="0.01">
+                <button id="train_btn">Train</button>
+
+            </div>
+            <div>
+                <h3>Evaluate</h3>
+                <h4>Enter decimal number</h4>
+                <input id="x_data" type="number" placeholder="" min="1" value="1">
+                <h4>Enter evaluation rate</h4>
+                <input id="rate" type="number" placeholder="Evaluation rate" value="0.5">
+                <button id="evaluate_btn">Submit</button>
+                <h4 id="output_label"
+                    style=" width: 50%; padding: 1rem; background-color: #ccc; border-radius: 8px; color: #212142;">
+                    Output:
+                    0</h4>
+            </div>
+            <div>
+                <h3>Save the model</h3>
+                <h4>Enter Model Name</h4>
+                <input id="name" type="text" placeholder="Name of the model">
+                <button id="save_btn">Save</button>
+            </div>
+        </section>
+    </section>
+
+    <section id="canvas">
+        <section id="dom_canvas"></section>
+        <svg id="svg"></svg>
+    </section>
+</body>
+<script src="index.js" type="module"></script>
+
+</html>
